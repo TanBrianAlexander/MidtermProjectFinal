@@ -1,0 +1,233 @@
+.header h1 {
+    font-size: 40px;
+  }
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .navbar a.right {
+    float: right;
+  }
+  .header h1 {
+    font-size: 40px;
+  }
+  .headimage {
+    max-width: 50%;
+  }
+  @font-face {
+    font-family: 'hondafont';
+    src: url(ttf/ethnocentric.ttf);
+  }
+  @font-face {
+    font-family: 'typer';
+    src: url(ttf/vendetta.otf);
+  }
+  @font-face {
+    font-family: 'typer2';
+    src: url(ttf/nasalization-rg.ttf);
+    
+  }
+  @font-face {
+    font-family: 'typer3';
+    src: url(ttf/GeosansLight.ttf);
+  }
+  @font-face {
+    font-family: 'typer4';
+    src: url(ttf/Heading-Pro-ExtraBold-trial.ttf);
+  }
+  .headfont {
+    font-family: typer;
+    font-weight: bold;
+    color: crimson;
+    }
+  .headfont2{
+    font-family: hondafont;
+    font-weight: bold;
+    
+  }
+  .headfont3{
+    font-family: typer2;
+    font-weight: bold;
+  }
+  .headfont32{
+    font-family: typer2;
+    font-weight: bold;
+    color: crimson;
+    -webkit-text-stroke: 1px#333;
+  }
+  .headfont4{
+    font-family: typer3;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .headfont5{
+    font-family: typer4;
+    font-weight: bold;
+    font-size: 20px;
+  }   
+  .headfont6{
+    font-family: typer3;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .headfont7{
+    font-family: typer4;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+  /* Style the top navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  /* Style the header */
+  .header {
+    padding: 80px;
+    text-align: center;
+    background: #333;
+    color: white;
+  }
+
+  /* The drop down effect on the image*/
+  .container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: darkred;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+    opacity: 0.75;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .bg {
+    /* The image used */
+    background-image: url("cfd.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .masthead {
+    height: 47vh;
+   
+    background-image: url('cfd.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+   
+    
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    .gallery {
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
+      -webkit-column-width: 33%;
+      -moz-column-width: 33%;
+      column-width: 33%; }
+      .gallery .pics {
+      -webkit-transition: all 350ms ease;
+      transition: all 350ms ease; }
+      .gallery .animation {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); }
+      
+      @media (max-width: 450px) {
+      .gallery {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+      -webkit-column-width: 100%;
+      -moz-column-width: 100%;
+      column-width: 100%;
+      }
+      }
+      
+      @media (max-width: 400px) {
+      .btn.filter {
+      padding-left: 1.1rem;
+      padding-right: 1.1rem;
+      }
+      .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+      }
+      
+     
+      }
+  }
